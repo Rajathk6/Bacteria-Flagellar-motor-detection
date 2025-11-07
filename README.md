@@ -8,15 +8,15 @@ and the **[Tomo-Detect CLI GitHub repository](https://github.com/Rajathk6/tomo-d
 
 ## System Requirements
 
-Python 3.8 or higher
+ - Python 3.8 or higher
 
-PyTorch ≥ 2.0
+ - PyTorch ≥ 2.0
 
-CUDA-capable GPU (recommended)
+ - CUDA-capable GPU (recommended)
 
-Minimum 8 GB RAM
+ - Minimum 8 GB RAM
 
-2 GB disk space for models
+ - 2 GB disk space for models
 
 ---
 
@@ -63,40 +63,40 @@ tomo-detect/
 
 ### standalone_preprocess.py
 
- Loads raw Cryo-ET tomograms (.npy, .jpg, .mrc, or folders of slices).
+- Loads raw Cryo-ET tomograms (.npy, .jpg, .mrc, or folders of slices).
 
-Normalizes and resizes 3D volumes to a fixed size.
+* Normalizes and resizes 3D volumes to a fixed size.
 
-Generates Gaussian heatmap labels using coordinates from labels_new.csv.
++ Generates Gaussian heatmap labels using coordinates from labels_new.csv.
 
-Saves processed tensors under data/processed/.
+- Saves processed tensors under data/processed/.
 
 ### standalone_train.py
 
-Defines and trains a 3D CNN for flagellar motor localization.
+- Defines and trains a 3D CNN for flagellar motor localization.
 
-Handles data loading, augmentation, checkpoint saving, and validation.
+- Handles data loading, augmentation, checkpoint saving, and validation.
 
-Supports GPU acceleration and hyperparameter customization.
+- Supports GPU acceleration and hyperparameter customization.
 
 ### standalone_inference.py
 
-Performs 3D inference on new tomograms using trained models.
+- Performs 3D inference on new tomograms using trained models.
 
-Generates probability maps and binary masks of detected regions.
+- Generates probability maps and binary masks of detected regions.
 
-Supports both CPU and GPU backends.
+- Supports both CPU and GPU backends.
 
 ### standalone_postprocess.py
 
-Converts raw probability maps into discrete motor coordinates.
+- Converts raw probability maps into discrete motor coordinates.
 
-Applies filtering and thresholding to refine predictions.
+- Applies filtering and thresholding to refine predictions.
 
-Outputs results as .csv, .npy, and .json summaries.
+- Outputs results as .csv, .npy, and .json summaries.
 
 ### model_visualization.py
 
-Provides visualization utilities for inspection of model outputs.
+- Provides visualization utilities for inspection of model outputs.
 
-Supports 2D slice overlays and 3D volume visualizations.
+- Supports 2D slice overlays and 3D volume visualizations.
