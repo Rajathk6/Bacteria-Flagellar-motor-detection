@@ -3,7 +3,7 @@
 A modular deep learning framework for **localizing bacterial flagellar motors** in Cryo-Electron Tomography (Cryo-ET) volumes.  
 This repository provides standalone scripts for preprocessing, model training, inference, and postprocessing.
 
-For command-line usage, refer to the **[Tomo-Detect CLI on PyPI](https://pypi.org/project/tomo-detect/0.1.6/)**  
+For command-line usage, refer to the **[Tomo-Detect CLI on PyPI](https://pypi.org/project/tomo-detect/0.1.7/)**  
 and the **[Tomo-Detect CLI GitHub repository](https://github.com/Rajathk6/tomo-detect-cli)**.
 
 ## System Requirements
